@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#quote-box{
+  width: max-content;
+  max-width: 50%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 40px;
+  
+}
+
+/* Custom base styles */
+@layer base {
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn {
+    @apply text-white font-bold py-2 px-4 rounded;
+  }
+}
